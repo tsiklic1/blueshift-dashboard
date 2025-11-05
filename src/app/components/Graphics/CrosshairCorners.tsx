@@ -9,6 +9,7 @@ export default function CrosshairCorners({
   spacingY = 0,
   className = "",
   moveDistance = 5,
+  style,
   thickness = 2,
   animationDuration = 2.15,
   key,
@@ -27,6 +28,7 @@ export default function CrosshairCorners({
   borders?: ("left" | "right")[];
   className?: string;
   moveDistance?: number;
+  style?: React.CSSProperties;
   key?: string;
 }) {
   return (
@@ -48,6 +50,7 @@ export default function CrosshairCorners({
       }}
       style={
         {
+          ...style,
           "--size": size + "px",
           "--spacing-x": spacingX + "px",
           "--spacing-y": spacingY + "px",

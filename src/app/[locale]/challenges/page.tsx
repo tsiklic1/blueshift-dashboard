@@ -58,9 +58,9 @@ export default function RewardsPage() {
               </span>
               <CrosshairCorners
                 size={5}
-                spacingTop={4}
-                spacingBottom={1}
+                spacingY={4}
                 spacingX={5}
+                baseDelay={0}
               />
             </div>
             <span className="sr-only">{t("ChallengeCenter.title")}</span>

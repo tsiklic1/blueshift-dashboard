@@ -16,10 +16,10 @@ export default function Home() {
                 {t("lessons.subtitle")}
               </span>
               <CrosshairCorners
-                size={5}
-                spacingTop={4}
-                spacingBottom={1}
+                size={6}
+                spacingY={4}
                 spacingX={5}
+                baseDelay={0}
               />
             </div>
             <span className="sr-only">{t("lessons.title")}</span>

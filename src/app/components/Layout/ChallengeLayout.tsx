@@ -42,14 +42,14 @@ export default async function ChallengeLayout({
             <div className="flex items-center gap-x-2 relative w-max">
               <CrosshairCorners
                 size={5}
-                spacingTop={2}
-                spacingBottom={2}
+                spacingY={2}
                 spacingX={6}
                 style={{
                   color: `rgb(${
                     challengeColors[challengeMetadata.language]
                   },1)`,
                 }}
+                baseDelay={0}
               />
               <div
                 className="w-[24px] h-[24px] rounded-sm flex items-center justify-center text-brand-primary"
